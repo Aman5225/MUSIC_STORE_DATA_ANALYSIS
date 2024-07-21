@@ -1,0 +1,6 @@
+/*WHICH COUNTRY HAVE THE MOST INVOICES*/
+SELECT COUNT (*) AS no,billing_country
+FROM invoice
+GROUP BY billing_country
+ORDER BY no DESC
+LIMIT 1
